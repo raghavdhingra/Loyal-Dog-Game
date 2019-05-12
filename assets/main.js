@@ -20,6 +20,34 @@ document.getElementById("playground").addEventListener("mousemove",(eve)=>{
     var x = eve.clientX;
     var y = eve.clientY;
     setTimeout(()=>{
+        if (y>645 && x>225){
+            box.style.top="645px";
+            box.style.left=`${x}px`;
+        }
+        else if (y>645 && x<225){
+            box.style.top="645px";
+            box.style.left="225px";
+        }
+        else if (y < 90 && x < 225) {
+            box.style.top = "90px";
+            box.style.left = "225px";
+        }
+        else if (y < 90 && x >= 225) {
+            box.style.top = "90px";
+            box.style.left = `${x}px`;
+        }
+        else if (y >= 90 && x < 225) {
+            box.style.top = `${y}px`;
+            box.style.left = "225px;"
+        }
+        else if (y >= 90 && x >= 225) {
+            box.style.left = `${x}px`;
+            box.style.top = `${y}px`;
+        }
+        text.innerText = `The coordinates are: X -> ${x}px and Y -> ${y}px`;
+    }
+    ,300);
+    setTimeout(()=>{
         human.style.top=`${y}px`;
         human.style.left=`${x}px`;
     },0);
