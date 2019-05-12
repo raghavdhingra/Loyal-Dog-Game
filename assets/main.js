@@ -15,3 +15,12 @@ for (i=0;i<=500;i++){
     elmt.style.left = `${ran2}%`;
     document.getElementById("play_1").appendChild(elmt);
 }
+
+document.getElementById("playground").addEventListener("mousemove",(eve)=>{
+    var x = eve.clientX;
+    var y = eve.clientY;
+    setTimeout(()=>{
+        human.style.top=`${y}px`;
+        human.style.left=`${x}px`;
+    },0);
+});
