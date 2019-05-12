@@ -31,3 +31,23 @@
     cursor: default;
     transform: translate(-150%,-30%);
 }
+
+.dot{
+    margin: 11vh 10vw;
+    position: absolute;
+    top: 20px;
+    z-index: 0;
+    left: 20px;
+    height: 3px;
+    transform: rotate(45deg);
+    width: 5px;
+    background: rgb(0, 97, 21);
+    border-radius: 50%;
+}
+.human{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    z-index: 10;
+    transform: translate(-10%,-50%);
+}
