@@ -13,3 +13,21 @@
     margin-left: 10vw;
     background: rgb(0, 206, 69);
 }
+.over{
+    position: absolute;
+    z-index: 11;
+    margin-left: 10vw;
+}
+.text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 10vw;
+}
+.box{
+    position: absolute;
+    height: 50px;
+    z-index: 1;
+    width: 50px;
+    cursor: default;
+    transform: translate(-150%,-30%);
+}
